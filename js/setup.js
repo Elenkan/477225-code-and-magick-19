@@ -17,16 +17,16 @@ var getRandomElement = function (arr) {
 };
 
 var getNewArrow = function () {
-  var arr = [];
+  var mans = [];
   for (var i = 0; i < NUMBER_WIZARD; i++) {
-    arr[i] =
+    mans[i] =
     {
       name: WIZARD_NAMES[getRandomElement(WIZARD_NAMES)] + ' ' + WIZARD_SURNAMES[getRandomElement(WIZARD_SURNAMES)],
       coatColor: WIZARD_COATS_COLOR[getRandomElement(WIZARD_COATS_COLOR)],
       eyesColor: WIZARD_EYES_COLOR[getRandomElement(WIZARD_EYES_COLOR)]
     };
   }
-  return arr;
+  return mans;
 };
 
 var wizards = getNewArrow();
